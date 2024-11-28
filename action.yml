@@ -1,0 +1,14 @@
+name: "Greet User Action"
+description: "Une action qui salue un utilisateur avec un message personnalisé"
+inputs:
+  username:
+    description: "Nom de l'utilisateur à saluer"
+    required: true
+  greeting:
+    description: "Message de salutation"
+    required: false
+    default: "Bonjour"
+runs:
+  using: "node20"
+  main: "index.js"
+  
